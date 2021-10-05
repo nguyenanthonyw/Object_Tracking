@@ -1,6 +1,10 @@
 import cv2
+from tracker import *
 
 cap = cv2.VideoCapture("highway.mp4")
+
+
+tacker = EuclideanDistTracker()
 
 object_detector = cv2.createBackgroundSubtractorMOG2(history=100, varThreshold=40 ) #detect objects
 
