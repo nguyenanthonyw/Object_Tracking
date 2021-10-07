@@ -1,6 +1,9 @@
 import cv2
 from tracker import *
 
+
+# This program takes a video file and track how many objects pass on the road
+
 cap = cv2.VideoCapture("highway.mp4")
 
 
