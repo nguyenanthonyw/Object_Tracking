@@ -35,10 +35,16 @@ while True:
         area = cv2.contourArea(cnt)
         if area > 100:
             x, y,  w, h = cv2.boundingRect(cnt)
-            cv2.rectangle(roi, (x,y), (x+w, y + h), (0,255,0), 3)
+
             detections.append([x, y,w,h])
 
     boxes_ids = tracker.update(detections)
+    print(boxes_ids)
+
+    for boxes_ids in boxes_ids:
+        x, y, w, h, id = boxes_ids
+        cv2.putText(roi, str(id), (x ,y - 15), cv2.FONT_HERSHEY_PLAIN, 1 , (255, 0,0),2)
+        cv2.rectangle(roi, (x, y), (x + w, y + h), (0, 255, 0), 3)
 
 
 
