@@ -29,8 +29,8 @@ This program takes a video clip and count how many vehicles passed through the s
 
 Here's how:
 * The program takes a .mp4 file
-* Use the sklearn frame work to train and test the data 
-* Use the K-neighbors to fit the model
+* Use the OpenCV framework to detect motion in a still video  
+* Use object detection to count how many cars passed by
 
 Once it finish computing it will output the predicted and the actually results
 
