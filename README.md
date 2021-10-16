@@ -37,6 +37,7 @@ Once it finish computing it will output the predicted and the actually results
 ### Built With
 
 The program was built using the frame work listed below:
+* [OpenCV](https://opencv.org)
 * [NumPy](https://numpy.org/)
 * [Pandas](https://pandas.pydata.org/)
 * [Scikit-learn](https://scikit-learn.org/stable/)
